@@ -1,11 +1,13 @@
 import { Element } from "react-scroll";
 import About from "../components/about/About";
 import Consulting from "../components/consulting/Consulting";
+import Main from "../components/main/Main";
 
 export default function Home() {
   return (
     <>
       {/* 메인 슬라이드 */}
+      <Main />
 
       <div id="1">
         <Element name="test1" className="test1">
