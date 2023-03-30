@@ -16,7 +16,7 @@ export async function handleConsulting({
     },
     credentials: "include",
     body: JSON.stringify({
-      type: "세부 한달 살기",
+      type: "바기오 주니어캠프",
       name,
       email,
       tel,

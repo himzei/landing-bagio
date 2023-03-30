@@ -7,7 +7,7 @@ const Sitemap = require("react-router-sitemap").default;
 
 function generateSitemap() {
   return new Sitemap(router)
-    .build("https://iwon-cebu-month.netlify.app/") // 여러분의 도메인 이름으로 변경해주세요.
+    .build("https://iwon-baguio.netlify.app/") // 여러분의 도메인 이름으로 변경해주세요.
     .save("./public/sitemap.xml"); // sitemap.xml 파일이 생성될 위치입니다.
 }
 
