@@ -48,60 +48,68 @@ export default function Main() {
           </Box>
         ))}
       </Slider>
-      <VStack position="absolute" w="full" top="30%" spacing="10">
-        <VStack>
-          <Text
-            fontWeight="200"
-            fontSize={{ sm: "48", md: "90" }}
-            color="white"
-            lineHeight={{ sm: "60px", md: "85px" }}
-            opacity="0.8"
-          >
-            학습공백없는
-          </Text>
-          <Text
-            fontWeight="900"
-            fontSize={{ sm: "48", md: "90" }}
-            color="white"
-            lineHeight={{ sm: "60px", md: "85px" }}
-            opacity="0.9"
-          >
-            세부한달살기
-          </Text>
-        </VStack>
-        <VStack alignItems="flex-start" color="white" spacing="0" px="8">
-          <HStack>
-            <BsCheck2Square />
-            <Text>미국 특목고 & 대입 시험 무료 체험(중고등학생)</Text>
-          </HStack>
-          <HStack>
-            <BsCheck2Square />
-            <Text>무료 입시 세미나(중고등학생)</Text>
-          </HStack>
-          <HStack>
-            <BsCheck2Square />
-            <Text>무료 셔틀 서비스</Text>
-          </HStack>
-        </VStack>
-        <Box
-          bg="rgba(255, 255, 255, 0.1)"
-          px="20"
-          py="4"
-          rounded="full"
-          cursor="pointer"
-          border="1px"
-          borderColor="rgba(255, 255, 255, 0.2)"
-          transition="0.8s"
-          _hover={{
-            bg: "yellow.600",
-          }}
-        >
-          <a href="/#6">
-            <Text color="white" fontWeight="600">
-              상담신청하기
+      <VStack
+        position="absolute"
+        top="0"
+        w="full"
+        h="full"
+        spacing="10"
+        alignItems="center"
+        justifyContent="center"
+      >
+        <VStack w="7xl" alignItems="flex-start" spacing={8}>
+          <VStack alignItems="flex-start" spacing="0">
+            <Text
+              pl="4"
+              fontWeight="200"
+              fontSize={{ sm: "48", md: "36" }}
+              lineHeight="20px"
+              color="white"
+              opacity="0.8"
+            >
+              2023 여름방학캠프
             </Text>
-          </a>
-        </Box>
+            <Text
+              fontWeight="900"
+              fontSize={{ sm: "48", md: "70" }}
+              color="white"
+              opacity="0.9"
+              letterSpacing={"-5px"}
+            >
+              JUNIOR Summer Camp
+            </Text>
+            <Text
+              fontSize="20"
+              fontWeight={600}
+              px="10"
+              py="2"
+              rounded="xl"
+              bg="rgba(255, 255, 255, 0.5)"
+            >
+              필리핀 클락 경제 자유 특구 내 최적의 학습 환경을 갖춘 프리미엄
+              캠프
+            </Text>
+          </VStack>
+          <Box
+            bg="rgba(255, 255, 255, 0.1)"
+            px="20"
+            py="4"
+            rounded="full"
+            cursor="pointer"
+            border="1px"
+            borderColor="rgba(255, 255, 255, 0.2)"
+            transition="0.8s"
+            _hover={{
+              bg: "yellow.600",
+            }}
+          >
+            <a href="/#6">
+              <Text color="white" fontWeight="600">
+                상담신청하기
+              </Text>
+            </a>
+          </Box>
+        </VStack>
       </VStack>
     </Box>
   );
