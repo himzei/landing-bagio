@@ -7,6 +7,7 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";

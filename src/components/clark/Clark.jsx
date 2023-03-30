@@ -5,11 +5,25 @@ import Clark2 from "./images/2.jpg";
 import Clark3 from "./images/3.jpg";
 import Clark4 from "./images/4.jpg";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 export default function Clark() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  });
   return (
     <VStack w="full" alignItems="center" bg="gray.100" py="32">
       <VStack w="7xl" spacing={32}>
-        <VStack w="full" alignItems="flex-start" spacing="8">
+        <VStack
+          data-aos="zoom-in-up"
+          w="full"
+          alignItems="flex-start"
+          spacing="8"
+        >
           <VStack spacing="0" alignItems="flex-start">
             <Text fontSize="20">Junior Camp in Clark</Text>
             <Text fontWeight={900} fontSize="40">
