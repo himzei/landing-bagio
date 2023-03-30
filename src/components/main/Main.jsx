@@ -1,4 +1,4 @@
-import { Box, HStack, Image, Text, VStack } from "@chakra-ui/react";
+import { Box, Image, Text, VStack } from "@chakra-ui/react";
 import Slider from "react-slick";
 import Main1 from "./images/1.jpg";
 import Main2 from "./images/2.jpg";
@@ -7,7 +7,6 @@ import Main4 from "./images/4.jpg";
 import Main5 from "./images/5.jpg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { BsCheck2Square } from "react-icons/bs";
 
 export default function Main() {
   const mainImages = [Main1, Main2, Main3, Main4, Main5];
