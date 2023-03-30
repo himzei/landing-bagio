@@ -1,4 +1,6 @@
 import { Element } from "react-scroll";
+import About from "../components/about/About";
+import Consulting from "../components/consulting/Consulting";
 
 export default function Home() {
   return (
@@ -6,7 +8,9 @@ export default function Home() {
       {/* 메인 슬라이드 */}
 
       <div id="1">
-        <Element name="test1" className="test1"></Element>
+        <Element name="test1" className="test1">
+          <About />
+        </Element>
       </div>
 
       <div id="2">
@@ -26,7 +30,9 @@ export default function Home() {
       </div>
 
       <div id="6">
-        <Element name="test6" className="test6"></Element>
+        <Element name="test6" className="test6">
+          <Consulting />
+        </Element>
       </div>
     </>
   );
