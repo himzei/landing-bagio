@@ -1,5 +1,6 @@
 import { Element } from "react-scroll";
 import About from "../components/about/About";
+import Clark from "../components/clark/Clark";
 import Consulting from "../components/consulting/Consulting";
 import Main from "../components/main/Main";
 
@@ -16,7 +17,9 @@ export default function Home() {
       </div>
 
       <div id="2">
-        <Element name="test2" className="test2"></Element>
+        <Element name="test2" className="test2">
+          <Clark />
+        </Element>
       </div>
 
       <div id="3">
