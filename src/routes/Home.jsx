@@ -3,6 +3,7 @@ import About from "../components/about/About";
 import Clark from "../components/clark/Clark";
 import Consulting from "../components/consulting/Consulting";
 import Main from "../components/main/Main";
+import Speciality from "../components/speciality/Speciality";
 
 export default function Home() {
   return (
@@ -23,7 +24,9 @@ export default function Home() {
       </div>
 
       <div id="3">
-        <Element name="test3" className="test3"></Element>
+        <Element name="test3" className="test3">
+          <Speciality />
+        </Element>
       </div>
 
       <div id="4">

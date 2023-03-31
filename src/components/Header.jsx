@@ -113,7 +113,7 @@ export default function Header() {
             </HStack>
             <HStack spacing={5}>
               <a href="/#6">
-                <Button bg="yellow.600" w={{ sm: "100px", md: "120px" }}>
+                <Button bg="#4090f3" w={{ sm: "100px", md: "120px" }}>
                   <Text fontSize={{ sm: "14px", md: "16px" }}>
                     빠른견적 문의
                   </Text>

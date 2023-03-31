@@ -99,7 +99,7 @@ export default function Main() {
             borderColor="rgba(255, 255, 255, 0.2)"
             transition="0.8s"
             _hover={{
-              bg: "yellow.600",
+              bg: "#4090f3",
             }}
           >
             <a href="/#6">

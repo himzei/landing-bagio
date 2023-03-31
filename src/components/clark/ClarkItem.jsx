@@ -22,7 +22,7 @@ export default function ClarkItem({
       <GridItem>
         <VStack alignItems="flex-start">
           <Text as="span" fontWeight={600} fontSize="36">
-            <Text as="span" color="red.500">
+            <Text as="span" color="#4090f3">
               {textTitle1}
             </Text>
             {textTitle2}
