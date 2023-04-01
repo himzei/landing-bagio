@@ -54,6 +54,8 @@ export default function SpecialityItem({ textTitle, svgUrl, modalUrl }) {
             px={2}
             position="relative"
             overflow={"hidden"}
+            cursor={"pointer"}
+            onClick={onOpen}
           >
             <Box
               bg="gray.800"
@@ -81,8 +83,6 @@ export default function SpecialityItem({ textTitle, svgUrl, modalUrl }) {
               top="4"
               left="50%"
               transform={"translateX(-50%)"}
-              cursor={"pointer"}
-              onClick={onOpen}
             >
               <Text fontSize={24} fontWeight="600" color="white">
                 {textTitle}

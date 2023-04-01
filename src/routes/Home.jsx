@@ -4,6 +4,7 @@ import Clark from "../components/clark/Clark";
 import Consulting from "../components/consulting/Consulting";
 import Main from "../components/main/Main";
 import Speciality from "../components/speciality/Speciality";
+import Portfolio from "../components/portfolio/Portfolio";
 
 export default function Home() {
   return (
@@ -30,7 +31,9 @@ export default function Home() {
       </div>
 
       <div id="4">
-        <Element name="test4" className="test4"></Element>
+        <Element name="test4" className="test4">
+          <Portfolio />
+        </Element>
       </div>
 
       <div id="5">
