@@ -8,8 +8,11 @@ export default function ClarkItem({
   orderNum = "0",
 }) {
   return (
-    <Grid templateColumns={"repeat(2, 1fr)"} gap="16">
-      <GridItem order={orderNum}>
+    <Grid
+      templateColumns={{ sm: "repeat(1, 1fr)", lg: "repeat(2, 1fr)" }}
+      gap="16"
+    >
+      <GridItem order={{ sm: "0", lg: orderNum }}>
         <Box rounded="2xl" h="300px" overflow="hidden" boxShadow="xl">
           <Image
             h="full"

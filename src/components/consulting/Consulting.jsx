@@ -194,7 +194,7 @@ export default function Consulting() {
           <FormLabel>서비스유형</FormLabel>
 
           <Grid templateColumns={"repeat(2, 1fr)"} gap={2} w="full">
-            {options.map((value) => {
+            {options.map((value, index) => {
               const checkbox = getCheckboxProps({ value });
               return (
                 <GridItem>

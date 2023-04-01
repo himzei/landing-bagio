@@ -18,7 +18,12 @@ export default function Speciality() {
         top="0"
         bg="rgba(0, 0, 0, 0.1)"
       />
-      <Grid w="5xl" templateColumns={"repeat(3, 1fr)"} zIndex={9}>
+      <Grid
+        w={{ sm: "sm", lg: "5xl" }}
+        templateColumns={{ sm: "repeat(1, 1fr)", lg: "repeat(3, 1fr)" }}
+        gap={8}
+        zIndex={9}
+      >
         <SpecialityItem
           textTitle="수업 구성"
           svgUrl={Image1}

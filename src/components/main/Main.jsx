@@ -23,7 +23,7 @@ export default function Main() {
   };
 
   return (
-    <Box w="full" h="100vh" position="relative">
+    <Box h="100vh" position="relative">
       <Slider {...settings}>
         {mainImages?.map((image, index) => (
           <Box h="100vh" key={index} position="relative">
@@ -56,12 +56,17 @@ export default function Main() {
         alignItems="center"
         justifyContent="center"
       >
-        <VStack w="7xl" alignItems="flex-start" spacing={8}>
+        <VStack
+          w={{ sm: "sm", md: "xl", lg: "7xl" }}
+          alignItems="flex-start"
+          spacing={8}
+          px="4"
+        >
           <VStack alignItems="flex-start" spacing="0">
             <Text
-              pl="4"
+              pl={{ sm: "0", md: "4" }}
               fontWeight="200"
-              fontSize={{ sm: "48", md: "36" }}
+              fontSize={{ sm: "24", md: "36" }}
               lineHeight="20px"
               color="white"
               opacity="0.8"
@@ -70,17 +75,17 @@ export default function Main() {
             </Text>
             <Text
               fontWeight="900"
-              fontSize={{ sm: "48", md: "70" }}
+              fontSize={{ sm: "24", md: "70" }}
               color="white"
               opacity="0.9"
-              letterSpacing={"-5px"}
+              letterSpacing={{ sm: "0px", md: "-5px" }}
             >
               JUNIOR Summer Camp
             </Text>
             <Text
-              fontSize="20"
+              fontSize={{ sm: "16", md: "20" }}
               fontWeight={600}
-              px="10"
+              px={{ sm: "4", md: "10" }}
               py="2"
               rounded="xl"
               bg="rgba(255, 255, 255, 0.5)"
@@ -91,7 +96,7 @@ export default function Main() {
           </VStack>
           <Box
             bg="rgba(255, 255, 255, 0.1)"
-            px="20"
+            px={{ sm: "8", md: "20" }}
             py="4"
             rounded="full"
             cursor="pointer"

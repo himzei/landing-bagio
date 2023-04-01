@@ -54,19 +54,31 @@ import Img46 from "./images/46.png";
 import Img47 from "./images/47.png";
 import Img48 from "./images/48.png";
 
+// AOS
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 export default function Portfolio() {
+  useEffect(() => {
+    AOS.init();
+  });
   return (
     <VStack py="32" w="full" alignItems="center">
-      <VStack w="7xl" spacing="16">
+      <VStack w={{ sm: "sm", lg: "7xl" }} spacing="16">
         {/* 학습시설 */}
-        <VStack w="full" spacing="8" alignItems="center">
-          <HStack w="full" fontSize={28}>
+        <VStack w="full" spacing="8" alignItems="center" data-aos="zoom-in">
+          <HStack w="full" fontSize={{ sm: "20", lg: "28" }}>
             <Text>바기오 주니어 캠프</Text>
             <Text fontWeight={600} color="custom.100">
               학습시설 & 기숙사
             </Text>
           </HStack>
-          <Grid w="full" templateColumns={"repeat(4, 1fr)"} gap="2">
+          <Grid
+            w="full"
+            templateColumns={{ sm: "repeat(2, 1fr)", lg: "repeat(4, 1fr)" }}
+            gap="2"
+          >
             <PortfolioItem imgUrl={Img1} />
             <PortfolioItem imgUrl={Img2} />
             <PortfolioItem imgUrl={Img3} />
@@ -83,14 +95,18 @@ export default function Portfolio() {
         </VStack>
 
         {/* 편의시설 */}
-        <VStack w="full" spacing="8" alignItems="center">
-          <HStack w="full" fontSize={28}>
+        <VStack w="full" spacing="8" alignItems="center" data-aos="zoom-in">
+          <HStack w="full" fontSize={{ sm: "20", lg: "28" }}>
             <Text>바기오 주니어 캠프</Text>
             <Text fontWeight={600} color="custom.100">
               편의시설
             </Text>
           </HStack>
-          <Grid w="full" templateColumns={"repeat(4, 1fr)"} gap="2">
+          <Grid
+            w="full"
+            templateColumns={{ sm: "repeat(2, 1fr)", lg: "repeat(4, 1fr)" }}
+            gap="2"
+          >
             <PortfolioItem imgUrl={Img13} />
             <PortfolioItem imgUrl={Img14} />
             <PortfolioItem imgUrl={Img15} />
@@ -103,14 +119,18 @@ export default function Portfolio() {
         </VStack>
 
         {/* 캠프생활 */}
-        <VStack w="full" spacing="8" alignItems="center">
-          <HStack w="full" fontSize={28}>
+        <VStack w="full" spacing="8" alignItems="center" data-aos="zoom-in">
+          <HStack w="full" fontSize={{ sm: "20", lg: "28" }}>
             <Text>바기오 주니어 캠프</Text>
             <Text fontWeight={600} color="custom.100">
               캠프생활
             </Text>
           </HStack>
-          <Grid w="full" templateColumns={"repeat(4, 1fr)"} gap="2">
+          <Grid
+            w="full"
+            templateColumns={{ sm: "repeat(2, 1fr)", lg: "repeat(4, 1fr)" }}
+            gap="2"
+          >
             <PortfolioItem imgUrl={Img21} />
             <PortfolioItem imgUrl={Img22} />
             <PortfolioItem imgUrl={Img23} />
@@ -127,14 +147,18 @@ export default function Portfolio() {
         </VStack>
 
         {/* 액티비티 */}
-        <VStack w="full" spacing="8" alignItems="center">
-          <HStack w="full" fontSize={28}>
+        <VStack w="full" spacing="8" alignItems="center" data-aos="zoom-in">
+          <HStack w="full" fontSize={{ sm: "20", lg: "28" }}>
             <Text>바기오 주니어 캠프</Text>
             <Text fontWeight={600} color="custom.100">
               주말액티비티
             </Text>
           </HStack>
-          <Grid w="full" templateColumns={"repeat(4, 1fr)"} gap="2">
+          <Grid
+            w="full"
+            templateColumns={{ sm: "repeat(2, 1fr)", lg: "repeat(4, 1fr)" }}
+            gap="2"
+          >
             <PortfolioItem imgUrl={Img33} />
             <PortfolioItem imgUrl={Img34} />
             <PortfolioItem imgUrl={Img35} />

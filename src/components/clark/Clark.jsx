@@ -17,7 +17,7 @@ export default function Clark() {
   });
   return (
     <VStack w="full" alignItems="center" bg="gray.100" py="32">
-      <VStack w="7xl" spacing={32}>
+      <VStack w={{ sm: "sm", lg: "7xl" }} spacing={32}>
         <VStack
           data-aos="zoom-in-up"
           w="full"
