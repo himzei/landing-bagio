@@ -13,7 +13,6 @@ export default function Header() {
     { name: "장점", link: "test2", link2: "/#2" },
     { name: "커리큘럼", link: "test3", link2: "/#3" },
     { name: "사진", link: "test4", link2: "/#4" },
-    { name: "비용", link: "test5", link2: "/#5" },
   ];
   const [scroll, setScroll] = useState(true);
   const { pathname } = useLocation();
@@ -86,7 +85,7 @@ export default function Header() {
               )}
             </HStack>
             <HStack spacing={5}>
-              <a href="/#6">
+              <a href="/#5">
                 <Button bg="#4090f3" w={{ sm: "100px", md: "120px" }}>
                   <Text fontSize={{ sm: "14px", md: "16px" }}>
                     빠른견적 문의

@@ -37,10 +37,6 @@ export default function Home() {
       </div>
 
       <div id="5">
-        <Element name="test5" className="test5"></Element>
-      </div>
-
-      <div id="6">
         <Element name="test6" className="test6">
           <Consulting />
         </Element>
